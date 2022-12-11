@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://UI/Pause_menu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/SpaceEpandRect.png" type="Texture" id=3]
 [ext_resource path="res://Asteroid/Asteroid.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemy/Enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=6]
@@ -10,6 +11,11 @@
 __meta__ = {
 "_editor_description_": "The root of the scene"
 }
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 2150.0
+margin_bottom = 1060.0
+texture = ExtResource( 3 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource( 6 )

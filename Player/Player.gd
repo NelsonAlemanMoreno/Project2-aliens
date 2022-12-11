@@ -37,10 +37,10 @@ func _physics_process(_delta):
 
 func get_input():
 	var to_return = Vector2.ZERO
-	$Exhaust.hide()
+
 	if Input.is_action_pressed("forward"):
 		to_return.y -= 1
-		$Exhaust.show()
+
 	if Input.is_action_pressed("left"):
 		rotation_degrees = rotation_degrees - rotation_speed
 	if Input.is_action_pressed("right"):
